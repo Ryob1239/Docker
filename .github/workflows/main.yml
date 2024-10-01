@@ -13,7 +13,7 @@ jobs:
           name: Login to Docker
           uses: docker/login-action@v3
           with:
-            username: ${{ vers.DOCKER_USER }}
+            username: ${{ vars.DOCKER_USER }}
             PASSWORD: ${{ secrets.DOCKER-TOKEN }}
         -
             name: Set up Docker Buildx
